@@ -114,37 +114,54 @@
 			border-color: gray;
 			z-index: -1;
 		}
+		#button{
+		position: absolute;
+		z-index: 40;
+		display: none;
+		top: 27px;
+		height: 70px;
+		width: 70px;
+		background-color: #a0a0a0;
+		left: 2%;
+		border:ridge;
+		border-width: 8px;
+		border-color: gray; 
+		}
 		</style>
 	</head>
 
 
-	<body>
+	<body onload="load()">
+		<script src="../mobile.js"></script>
 		<div id="header">
-			<h1>Geometri</h1>
+			<div id="button" onmousedown="butt()"></div>
+			<h1 id="title">Geometri</h1>
 		</div>
 
 		<div id="nav">
 			<div id="nav2">
-				<a href="../VGSE/VGSES.html"><h4>English</h4></a>
+				<a href="../VGSE/VGSES.html"><h4 class="navtxt">English</h4></a>
 				<div id="nav3">
-					<a href="VGSSM.html"><h4>Möbiusband</h4></a>
+					<a href="VGSSM.html"><h4 class="navtxt">Möbiusband</h4></a>
 					<div id="nav4">
-						<a href="VGSSB.html"><h4>Borromeiska ringarna</h4></a>
+						<a href="VGSSB.html"><h4 class="navtxt">Borromeiska ringarna</h4></a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div id="sub1">
-			<h2>Möbiusband</h2>
-			<p> Möbiusband, Möbius band eller ibland Möbius strip är en lång rektangulär yta som vridits ett halvt varv med ändarna ihopsatta så att det längs sin nya bana har en sida och en kantlinje.</p>
-		</div>
-		<div id="sub2">
-			<h2>Borromeiska ringarna</h2>
-			<p>Borromeiska ringarna är en symbol som består av tre cirklar som sitter samman med brunniansk förbindelse, det vill säga att en cirkel inte kan avlägsnas utan att de båda andra frigörs från varandra.</p>
-		</div>
-		<div id="sub3">
-			<h2>Kleinflaska</h2>
-			<p>Kleinflaska eller kleinyta som det först kallades, är en konstruktion som fascinerat människor sedan den beskrevs första gången år 1882 av matematikern Felix Klein efter vilken den också är uppkallad. Kleinflaska är egentligen inte en flaska i ordets rätta mening utan en ensidig yta, där man antingen kan se det som att den saknar yttre eller inre yta eller där den tänkta inre/yttre ytan är samma. Ett möbiusband är ett band med endast en yta och en kantlinje. En kleinflaska är som ett möbiusband, men utan kantlinje. Det går enkelt att "bevisa" den bara har en kontinuerlig yta genom att dra ett streck på "alla" ytor utan att lyfta pennan (något man inte kan göra på ett vanligt band)</p>
+		<div id="guts">
+			<div id="sub1">
+				<h2 class="text3">Möbiusband</h2>
+				<p class="text2"> Möbiusband, Möbius band eller ibland Möbius strip är en lång rektangulär yta som vridits ett halvt varv med ändarna ihopsatta så att det längs sin nya bana har en sida och en kantlinje.</p>
+			</div>
+			<div id="sub2">
+				<h2 class="text3">Borromeiska ringarna</h2>
+				<p class="text2">Borromeiska ringarna är en symbol som består av tre cirklar som sitter samman med brunniansk förbindelse, det vill säga att en cirkel inte kan avlägsnas utan att de båda andra frigörs från varandra.</p>
+			</div>
+			<div id="sub3">
+				<h2 class="text3">Kleinflaska</h2>
+				<p class="text2">Kleinflaska eller kleinyta som det först kallades, är en konstruktion som fascinerat människor sedan den beskrevs första gången år 1882 av matematikern Felix Klein efter vilken den också är uppkallad. Kleinflaska är egentligen inte en flaska i ordets rätta mening utan en ensidig yta, där man antingen kan se det som att den saknar yttre eller inre yta eller där den tänkta inre/yttre ytan är samma. Ett möbiusband är ett band med endast en yta och en kantlinje. En kleinflaska är som ett möbiusband, men utan kantlinje. Det går enkelt att "bevisa" den bara har en kontinuerlig yta genom att dra ett streck på "alla" ytor utan att lyfta pennan (något man inte kan göra på ett vanligt band)</p>
+			</div>
 		</div>
 	</body>
 <html>

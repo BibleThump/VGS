@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8"/>
@@ -113,37 +113,54 @@
 			border-color: gray;
 			z-index: -1;
 		}
+		#button{
+		position: absolute;
+		z-index: 40;
+		display: none;
+		top: 27px;
+		height: 70px;
+		width: 70px;
+		background-color: #a0a0a0;
+		left: 2%;
+		border:ridge;
+		border-width: 8px;
+		border-color: gray; 
+		}
 		</style>
 	</head>
 
 
-	<body>
+	<body onload="load()">
+		<script src="../mobile.js"></script>
 		<div id="header">
-			<h1>Geometry</h1>
+			<div id="button" onmousedown="butt()"></div>
+			<h1 id="title">Geometry</h1>
 		</div>
 
 		<div id="nav">
 			<div id="nav2">
-				<a href="../VGSS/VGSSS.html"><h4>Svenska</h4></a>
+				<a href="../VGSS/VGSSS.html"><h4 class="navtxt">Svenska</h4></a>
 				<div id="nav3">
-					<a href="VGSEM.html"><h4>Mobius strip</h4></a>
+					<a href="VGSEM.html"><h4 class="navtxt">Mobius strip</h4></a>
 					<div id="nav4">
-						<a href="VGSEB.html"><h4>Borremean rings</h4></a>
+						<a href="VGSEB.html"><h4 class="navtxt">Borremean rings</h4></a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div id="sub1">
-			<h2>Mobius strip</h2>
-			<p> Mobius strip is a surface with only one side and only one boundary. The Mobius strip has the mathematical property of being non-orientable. It can be realized as a ruled surface. It was discovered independently by the German mathematicians August Ferdinand Möbius and Johann Benedict Listing in 1858.</p>
-		</div>
-		<div id="sub2">
-			<h2>Borromean rings</h2>
-			<p>In mathematics, the Borromean rings consist of three topological circles which are linked and form a Brunnian link (i.e., removing any ring results in two unlinked rings). In other words, no two of the three rings are linked with each other as a <a href="https://en.wikipedia.org/wiki/Hopf_link">hopf link </a>, but nonetheless all three are linked.</p>
-		</div>
-		<div id="sub3">
-			<h2>Klein bottle</h2>
-			<p>In mathematics, the Klein bottle /ˈklaɪn/ is an example of a non-orientable surface; it is a two-dimensional manifold against which a system for determining a normal vector cannot be consistently defined. Informally, it is a one-sided surface which, if traveled upon, could be followed back to the point of origin while flipping the traveler upside down. Other related non-orientable objects include the Möbius strip and the real projective plane. Whereas a Möbius strip is a surface with boundary, a Klein bottle has no boundary (for comparison, a sphere is an orientable surface with no boundary).</p>
+		<div id="guts">
+			<div id="sub1">
+				<h2 class="text3">Mobius strip</h2>
+				<p class="text2"> Mobius strip is a surface with only one side and only one boundary. The Mobius strip has the mathematical property of being non-orientable. It can be realized as a ruled surface. It was discovered independently by the German mathematicians August Ferdinand Möbius and Johann Benedict Listing in 1858.</p>
+			</div>
+			<div id="sub2">
+				<h2 class="text3">Borromean rings</h2>
+				<p class="text2">In mathematics, the Borromean rings consist of three topological circles which are linked and form a Brunnian link (i.e., removing any ring results in two unlinked rings). In other words, no two of the three rings are linked with each other as a <a href="https://en.wikipedia.org/wiki/Hopf_link">hopf link </a>, but nonetheless all three are linked.</p>
+			</div>
+			<div id="sub3">
+				<h2 class="text3">Klein bottle</h2>
+				<p class="text2">In mathematics, the Klein bottle /ˈklaɪn/ is an example of a non-orientable surface; it is a two-dimensional manifold against which a system for determining a normal vector cannot be consistently defined. Informally, it is a one-sided surface which, if traveled upon, could be followed back to the point of origin while flipping the traveler upside down. Other related non-orientable objects include the Möbius strip and the real projective plane. Whereas a Möbius strip is a surface with boundary, a Klein bottle has no boundary (for comparison, a sphere is an orientable surface with no boundary).</p>
+			</div>
 		</div>
 	</body>
 <html>

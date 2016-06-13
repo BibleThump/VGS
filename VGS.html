@@ -27,7 +27,6 @@
 				border-color: green;
 				border: inset;
 				border-width: 4pt;
-				border-color: green;
 				width:10%;
 				right:25%;
 				left:65%;
@@ -41,7 +40,6 @@
 				border-color: green;
 				border: inset;
 				border-width: 4pt;
-				border-color: green;
 				width:10%;
 				right:65%;
 				left:25%;
@@ -52,15 +50,16 @@
 			}
 		</style>
 	</head>
-	<body>
+	<body onload="load()">
+		<script src="start.js"></script>
 		<div id="r">
-			<h1><a href="https://www.youtube.com/watch?v=eviZCgQtIgc">Välj språk/choose language</a></h1>
+			<h1 id="text"><a href="https://www.youtube.com/watch?v=eviZCgQtIgc">Välj språk/choose language</a></h1>
 		</div>
 		<div id="t">
-			<p><a href="VGSS/VGSSS.html">Svenska</a></p>
+			<p class="text2"><a href="VGSS/VGSSS.html">Svenska</a></p>
 		</div>
 		<div id="z">
-			<p><a href="VGSE/VGSES.html">Engish</a></p>
+			<p class="text2"><a href="VGSE/VGSES.html">Engish</a></p>
 		</div>
 
 	</body>	

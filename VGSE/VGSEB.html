@@ -117,31 +117,47 @@
 			border-color: gray;
 			z-index: -1;
 		}
+		#button{
+		position: absolute;
+		z-index: 40;
+		display: none;
+		top: 27px;
+		height: 70px;
+		width: 70px;
+		background-color: #a0a0a0;
+		left: 2%;
+		border:ridge;
+		border-width: 8px;
+		border-color: gray; 
+		}
 		</style>
 	</head>
 
 
-	<body>
+	<body onload="load()">
+		<script src="../mobile2.js"></script>
 		<div id="header">
-			<h1>Geometry</h1>
+			<div id="button" onmousedown="butt()"></div>
+			<h1 id="title">Geometry</h1>
 		</div>
 
 		<div id="nav">
 			<div id="nav2">
-				<a href="../VGSS/VGSSB.html"><h4>Svenska</h4></a>
+				<a href="../VGSS/VGSSB.html"><h4 class="navtxt">Svenska</h4></a>
 				<div id="nav3">
-					<a href="VGSES.html"><h4>Start</h4></a>
+					<a href="VGSES.html"><h4 class="navtxt">Start</h4></a>
 					<div id="nav4">
-						<a href="VGSEM.html"><h4>Mobius strip</h4></a>
+						<a href="VGSEM.html"><h4 class="navtxt">Mobius strip</h4></a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="sub1">
-			<h2>Borremean rings</h2>
+			<h2 class="text3">Borremean rings</h2>
 			<ul>
-				<li> Mobius strip is a surface with only one side and only one boundary. The Mobius strip has the mathematical property of being non-orientable. It can be realized as a ruled surface. It was discovered independently by the German mathematicians August Ferdinand Möbius and Johann Benedict Listing in 1858.</li>
-				<li>Although the typical picture of the Borromean rings may lead one to think the link can be formed from geometrically ideal circles, they cannot be. Freedman and Skora (1987) prove that a certain class of links, including the Borromean links, cannot be exactly circular. Alternatively, this can be seen from considering the link diagram: if one assumes that circles 1 and 2 touch at their two crossing points, then they either lie in a plane or a sphere. In either case, the third circle must pass through this plane or sphere four times, without lying in it, which is impossible.</li>
+				<li class="text2"> Mobius strip is a surface with only one side and only one boundary. The Mobius strip has the mathematical property of being non-orientable. It can be realized as a ruled surface. It was discovered independently by the German mathematicians August Ferdinand Möbius and Johann Benedict Listing in 1858.</li>
+
+				<li class="text2">Although the typical picture of the Borromean rings may lead one to think the link can be formed from geometrically ideal circles, they cannot be. Freedman and Skora (1987) prove that a certain class of links, including the Borromean links, cannot be exactly circular. Alternatively, this can be seen from considering the link diagram: if one assumes that circles 1 and 2 touch at their two crossing points, then they either lie in a plane or a sphere. In either case, the third circle must pass through this plane or sphere four times, without lying in it, which is impossible.</li>
 			</ul>
 			<img src="https://upload.wikimedia.org/wikipedia/commons/3/33/AnneauxBorromeensFace.png" width="265" height="256">
 		</div>

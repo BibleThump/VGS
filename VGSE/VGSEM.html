@@ -117,36 +117,51 @@
 			border-color: gray;
 			z-index: -1;
 		}
+		#button{
+		position: absolute;
+		z-index: 40;
+		display: none;
+		top: 27px;
+		height: 70px;
+		width: 70px;	
+		background-color: #a0a0a0;
+		left: 2%;
+		border:ridge;
+		border-width: 8px;
+		border-color: gray; 
+		}
 		</style>
 	</head>
 
 
-	<body>
+	<body onload="load()">
+		<script src="../mobile3.js"></script>
 		<div id="header">
-			<h1>Geometry</h1>
+			<div id="button" onmousedown="butt()"></div>
+			<h1 id="title">Geometry</h1>
 		</div>
 
 		<div id="nav">
 			<div id="nav2">
-				<a href="../VGSS/VGSSM.html"><h4>Svenska</h4></a>
+				<a href="../VGSS/VGSSM.html"><h4 class="navtxt">Svenska</h4></a>
 				<div id="nav3">
-					<a href="VGSES.html"><h4>Start</h4></a>
+					<a href="VGSES.html"><h4 class="navtxt">Start</h4></a>
 					<div id="nav4">
-						<a href="VGSEB.html"><h4>Borremean rings</h4></a>
+						<a href="VGSEB.html"><h4 class="navtxt">Borremean rings</h4></a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="sub1">
-			<h2>Mobius strip</h2>
+			<h2 class="text3">Mobius strip</h2>
 			<ul> 
-				<li>The Möbius strip or Möbius band, also Mobius or Moebius, is a surface with only one side and only one boundary. The Möbius strip has the mathematical property of being non-orientable. It can be realized as a ruled surface. It was discovered independently by the German mathematicians August Ferdinand Möbius and Johann Benedict Listing in 1858</li>
+				<li class="text2">The Möbius strip or Möbius band, also Mobius or Moebius, is a surface with only one side and only one boundary. The Möbius strip has the mathematical property of being non-orientable. It can be realized as a ruled surface. It was discovered independently by the German mathematicians August Ferdinand Möbius and Johann Benedict Listing in 1858</li>
 
-				<li>An example of a Möbius strip can be created by taking a paper strip and giving it a half-twist, and then joining the ends of the strip together to form a loop. However, the Möbius strip is not a surface of only one exact size and shape, such as the half-twisted paper strip depicted in the illustration. Rather, mathematicians refer to the closed Möbius band as any surface that is homeomorphic to this strip. Its boundary is a simple closed curve, i.e., homeomorphic to a circle. This allows for a very wide variety of geometric versions of the Möbius band as surfaces each having a definite size and shape. For example, any rectangle can be glued to itself (by identifying one edge with the opposite edge after a reversal of orientation) to make a Möbius band. Some of these can be smoothly modeled in Euclidean space, and others cannot.</li>
+				<li class="text2">An example of a Möbius strip can be created by taking a paper strip and giving it a half-twist, and then joining the ends of the strip together to form a loop. However, the Möbius strip is not a surface of only one exact size and shape, such as the half-twisted paper strip depicted in the illustration. Rather, mathematicians refer to the closed Möbius band as any surface that is homeomorphic to this strip. Its boundary is a simple closed curve, i.e., homeomorphic to a circle. This allows for a very wide variety of geometric versions of the Möbius band as surfaces each having a definite size and shape. For example, any rectangle can be glued to itself (by identifying one edge with the opposite edge after a reversal of orientation) to make a Möbius band. Some of these can be smoothly modeled in Euclidean space, and others cannot.</li>
 
-				<li>A half-twist clockwise will give a different embedding of the Möbius strip than a half-twist counterclockwise – that is, as an embedded object in Euclidean space the Möbius strip is a chiral object with right- or left-handedness. However, the underlying topological spaces within the Möbius strip are homeomorphic in each case. There are an infinite number of topologically different embeddings of the same topological space into three-dimensional space, as the Möbius strip can also be formed by twisting the strip an odd number of times greater than one, or by knotting and twisting the strip, before joining its ends. The complete open Möbius band is an example of a topological surface that is closely related to the standard Möbius strip but that is not homeomorphic to it.</li>
+				<li class="text2">A half-twist clockwise will give a different embedding of the Möbius strip than a half-twist counterclockwise – that is, as an embedded object in Euclidean space the Möbius strip is a chiral object with right- or left-handedness. However, the underlying topological spaces within the Möbius strip are homeomorphic in each case. There are an infinite number of topologically different embeddings of the same topological space into three-dimensional space, as the Möbius strip can also be formed by twisting the strip an odd number of times greater than one, or by knotting and twisting the strip, before joining its ends. The complete open Möbius band is an example of a topological surface that is closely related to the standard Möbius strip but that is not homeomorphic to it.</li>
 
-				<li>It is straightforward to find algebraic equations, the solutions of which have the topology of a Möbius strip, but in general these equations do not describe the same geometric shape that one gets from the twisted paper model described above. In particular, the twisted paper model is a developable surface, having zero Gaussian curvature. A system of differential-algebraic equations that describes models of this type was published in 2007 together with its numerical solution.</li>
+				<li class="text2">It is straightforward to find algebraic equations, the solutions of which have the topology of a Möbius strip, but in general these equations do not describe the same geometric shape that one gets from the twisted paper model described above. In particular, the twisted paper model is a developable surface, having zero Gaussian curvature. A system of differential-algebraic equations that describes models of this type was published in 2007 together with its numerical solution.</li>
 			</ul>
 			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Moebius_strip.svg/712px-Moebius_strip.svg.png" width="256" height="256">
 		</div>

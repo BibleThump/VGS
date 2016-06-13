@@ -94,32 +94,47 @@
 			border-color: gray;
 			z-index: -1;
 		}
+		#button{
+		position: absolute;
+		z-index: 40;
+		display: none;
+		top: 27px;
+		height: 70px;
+		width: 70px;	
+		background-color: #a0a0a0;
+		left: 2%;
+		border:ridge;
+		border-width: 8px;
+		border-color: gray; 
+		}
 		</style>
 	</head>
 
 
-	<body>
+	<body onload="load()">
+		<script src="../mobile2.js"></script>
 		<div id="header">
-			<h1>Geometri</h1>
+			<div id="button" onmousedown="butt()"></div>
+			<h1 id="title">Geometri</h1>
 		</div>
 
 		<div id="nav">
 			<div id="nav2">
-				<a href="../VGSE/VGSEB.html"><h4>English</h4></a>
+				<a href="../VGSE/VGSEB.html"><h4 class="navtxt">English</h4></a>
 				<div id="nav3">
-					<a href="VGSSS.html"><h4>Start</h4></a>
+					<a href="VGSSS.html"><h4 class="navtxt">Start</h4></a>
 					<div id="nav4">
-						<a href="VGSSM.html"><h4>Möbiusband</h4></a>
+						<a href="VGSSM.html"><h4 class="navtxt">Möbiusband</h4></a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="sub1">
-			<h2>Borromeiska ringarna</h2>
+			<h2 class="text3">Borromeiska ringarna</h2>
 			<ul>
-				<li> Borromeiska ringarna är en symbol som består av tre cirklar som sitter samman med brunniansk förbindelse, det vill säga att en cirkel inte kan avlägsnas utan att de båda andra frigörs från varandra.</li>
+				<li class="text2"> Borromeiska ringarna är en symbol som består av tre cirklar som sitter samman med brunniansk förbindelse, det vill säga att en cirkel inte kan avlägsnas utan att de båda andra frigörs från varandra.</li>
 
-				<li>Namnet kommer från den italienska adelsätten Borromeo som har de borromeiska ringarna i sitt heraldiska vapen. De påminner om valknutar som förekommer på runstenar från 600-talet. Som symboler har de framför allt använts för att gestalta treenigheten.</li>
+				<li class="text2">Namnet kommer från den italienska adelsätten Borromeo som har de borromeiska ringarna i sitt heraldiska vapen. De påminner om valknutar som förekommer på runstenar från 600-talet. Som symboler har de framför allt använts för att gestalta treenigheten.</li>
 			</ul>
 			<img src="https://upload.wikimedia.org/wikipedia/commons/3/33/AnneauxBorromeensFace.png" width="265"	height="256">
 		</div>
